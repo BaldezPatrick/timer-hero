@@ -5,9 +5,6 @@ const handleTimer = () => {
   };
 
   const clock = document.querySelector(".time-wrapper");
-  const start = document.querySelector(".start");
-  const pause = document.querySelector(".pause");
-  const restart = document.querySelector(".restart");
   let second = 0;
   let timer;
 
