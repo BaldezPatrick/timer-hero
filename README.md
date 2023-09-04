@@ -5,7 +5,7 @@ A simple timer built in HTML, CSS, and JavaScript.
 
 ## Overview
 
-This project consists of a timer that can be started, paused, and restarted using interactive buttons. The time is displayed in a 24-hour format (hh:mm:ss) and is updated every second.
+This project consists of a timer that can be started, paused, and restarted using interactive buttons. The time is displayed in a 24-hour format (hh:mm:ss) and is updated every second. Also, this is a project to show all the power of dynamism that JS offers to pages for manipulating the DOM.
 
 ## Features
 
