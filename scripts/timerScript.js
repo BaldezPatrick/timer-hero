@@ -25,8 +25,10 @@ document.addEventListener("click", (e) => {
     clearInterval(timer);
     startClock();
   } else if (et.classList.contains("pause")) {
+    if (second !== 0) {
+      clock.classList.add("paused");
+    }
     clearInterval(timer);
-    clock.classList.add("paused");
   } else if (et.classList.contains("restart")) {
     clearInterval(timer);
     clock.innerHTML = "00:00:00";
