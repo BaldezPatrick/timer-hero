@@ -16,3 +16,21 @@ const startClock = () => {
   }, 1000);
 };
 
+document.addEventListener("click", (e) => {
+  const et = e.target;
+  console.log(et);
+
+  if (et.classList.contains("start")) {
+    clock.classList.remove("paused");
+    clearInterval(timer);
+    startClock();
+  } else if (et.classList.contains("pause")) {
+    clearInterval(timer);
+    clock.classList.add("paused");
+  } else if (et.classList.contains("restart")) {
+    clearInterval(timer);
+    clock.innerHTML = "00:00:00";
+    second = 0;
+    clock.classList.remove("paused");
+  }
+});
