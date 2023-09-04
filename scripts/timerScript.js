@@ -38,4 +38,13 @@ const handleTimer = () => {
   });
 };
 
+const handleFooterYear = () => {
+  const currentYearElement = document.querySelector("#currentYear");
+  const currentYear = new Date().getFullYear();
+
+  currentYearElement.textContent = currentYear;
+  currentYearElement.setAttribute("datetime", currentYear);
+};
+
 handleTimer();
+handleFooterYear();
