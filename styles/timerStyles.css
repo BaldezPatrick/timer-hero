@@ -77,3 +77,21 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 600px) {
+  .timer-wrapper {
+    width: 90%;
+  }
+
+  .timer-wrapper h1 {
+    font-size: 1.5rem;
+  }
+
+  .time-wrapper {
+    font-size: 3rem;
+  }
+
+  .buttons-wrapper {
+    flex-direction: column;
+  }
+}
